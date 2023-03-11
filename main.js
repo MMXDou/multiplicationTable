@@ -18,8 +18,8 @@ function addARow(i) {
 
 function addACell(currentRow, i, j) {
   let newCell = document.createElement('span');
-  let multiplication = i + " X " + j + " = ";
-  multiplication += i * j;
+  let multiplication = (i + 1) + " X " + (j + 1) + " = ";
+  multiplication += (i + 1) * (j + 1);
   newCell.innerText = multiplication;
   currentRow.append(newCell);
 }
